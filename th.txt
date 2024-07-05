@@ -1,0 +1,34 @@
+forEach : return void
+map : new array 
+
+
+react : components
+ecom  :
+products
+cart
+wishlist
+navabar
+profile
+.....
+
+communication bw components
+1)props
+
+    1)props stands for properties
+    2)props are used to pass data from parent to child component
+    3)props are immutable
+    4)props are read only
+    
+<User key = {value}>
+key can be anything
+
+limitation of props
+parent -> child ---> mostchild *
+props drilling
+
+parent -> child  --> send --> most child
+
+
+
+2)context
+3)redux
