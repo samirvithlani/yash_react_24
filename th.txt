@@ -32,3 +32,25 @@ parent -> child  --> send --> most child
 
 2)context
 3)redux
+
+dom : document object model | Document
+
+virtual dom : vdom is a lightweight copy of dom
+use of vdom :
+1)fast : compare and update only the changes
+2)easy : easy to update the changes
+3)efficient : only update the changes
+
+
+react hooks : built in functions | lifecycle methods | 16.8 | it starts with use
+1)useState
+use: to manage the state in functional component, it returns an array with two elements
+
+react routing...
+
+npm i react-router-dom
+
+
+<BrowserRouter> : it is a parent component, it is used to wrap the routes
+<Routes> : it is used to define the routes
+<Route> : it is used to define the path and component
