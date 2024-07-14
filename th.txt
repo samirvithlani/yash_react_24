@@ -54,3 +54,13 @@ npm i react-router-dom
 <BrowserRouter> : it is a parent component, it is used to wrap the routes
 <Routes> : it is used to define the routes
 <Route> : it is used to define the path and component
+...
+spread operaotr...
+
+orginal : ... spread, elements
+
+<select>country</select>
+india
+<select>city</select>
+
+hint: array : country ,cities
