@@ -14,6 +14,7 @@ import { Error404 } from './components/Error404';
 import { WishList } from './netflix/WishList';
 import { PlayShow } from './netflix/PlayShow';
 import { FormDemo1 } from './forms/FormDemo1';
+import { FormDemo2 } from './forms/FormDemo2';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
         <Route path = "/netflixhome/wishlist" element = {<WishList/>}></Route>
         <Route path = "/netflixshows/play/:id" element = {<PlayShow/>}></Route>
         <Route path='/formdemo1' element = {<FormDemo1/>}></Route>
+        <Route path='/formdemo2' element = {<FormDemo2/>}></Route>
         {/* <Route path ="/*" element = {<h1>404</h1>}></Route> */}
         <Route path='/*' element = {<Error404/>}></Route>
       </Routes>

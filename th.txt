@@ -64,3 +64,18 @@ india
 <select>city</select>
 
 hint: array : country ,cities
+
+
+
+const handleSubmit =(cb)=>{
+
+
+    ///form data... state....
+    obj={}
+
+    cb(obj)
+
+
+}
+
+npm install react-hook-form
