@@ -79,3 +79,17 @@ const handleSubmit =(cb)=>{
 }
 
 npm install react-hook-form
+
+{
+    required:
+    {
+        value:true,message:"name is required*"
+        }
+}
+
+ email:{
+            required:{
+                value:true,
+                message:"email is required*"
+            }
+        }
