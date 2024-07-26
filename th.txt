@@ -93,3 +93,18 @@ npm install react-hook-form
                 message:"email is required*"
             }
         }
+
+fetch function... late binding
+
+axios : library to make http request
+npm install axios
+
+GET : to get the data
+POST : to create the data
+PUT : to update the data
+DELETE: to delete the data
+PATCH:perticular update
+
+
+:to handle side effects
+chat application : hi --> replay --> hi --> replay
