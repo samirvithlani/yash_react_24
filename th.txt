@@ -108,3 +108,19 @@ PATCH:perticular update
 
 :to handle side effects
 chat application : hi --> replay --> hi --> replay
+
+getapi ->
+table delete --> function --> delete api --->(id)
+-->delete -->toast | alert |
+
+loader:
+isLoading state : true | false
+customeLoader component
+
+toast : npm install react-toastify
+https://www.npmjs.com/package/react-toastify
+
+
+
+post api : ---> userObjc --> button add:
+form convert

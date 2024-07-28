@@ -19,6 +19,7 @@ import { FormDemo3 } from './forms/FormDemo3';
 import { FormDemo4 } from './forms/FormDemo4';
 import { ApiDemo1 } from './api/ApiDemo1';
 import { UseEffectDemo } from './components/UseEffectDemo';
+import { ApiDemo2 } from './components/ApiDemo2';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
         <Route path='/formdemo2' element = {<FormDemo2/>}></Route>
         <Route path='/formdemo3' element = {<FormDemo4/>}></Route>
         <Route path='/apidemo1' element = {<ApiDemo1/>}></Route>
+        <Route path='/apidemo2' element = {<ApiDemo2/>}></Route>
         <Route path='/useEffectdemo' element = {<UseEffectDemo/>}></Route>
         {/* <Route path ="/*" element = {<h1>404</h1>}></Route> */}
         <Route path='/*' element = {<Error404/>}></Route>
