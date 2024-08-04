@@ -20,6 +20,7 @@ import { FormDemo4 } from './forms/FormDemo4';
 import { ApiDemo1 } from './api/ApiDemo1';
 import { UseEffectDemo } from './components/UseEffectDemo';
 import { ApiDemo2 } from './components/ApiDemo2';
+import { UpdateUser } from './api/UpdateUser';
 
 function App() {
 
@@ -42,6 +43,7 @@ function App() {
         <Route path='/apidemo1' element = {<ApiDemo1/>}></Route>
         <Route path='/apidemo2' element = {<ApiDemo2/>}></Route>
         <Route path='/useEffectdemo' element = {<UseEffectDemo/>}></Route>
+        <Route path = "/updateuser/:id" element = {<UpdateUser/>}></Route>
         {/* <Route path ="/*" element = {<h1>404</h1>}></Route> */}
         <Route path='/*' element = {<Error404/>}></Route>
       </Routes>

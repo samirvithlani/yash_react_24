@@ -3,10 +3,14 @@ import React, { useEffect, useState } from "react";
 import { CustomeLoader } from "../components/CustomeLoader";
 import { Bounce, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Modal, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export const ApiDemo1 = () => {
   const [users, setusers] = useState([]);
   const [isLoading, setisLoading] = useState(false);
+  const [show, setShow] = useState(false);
+
   const getApiCall = async () => {
     //get --> {headers:content-type:application/json}
     setisLoading(true);
@@ -46,6 +50,17 @@ export const ApiDemo1 = () => {
   useEffect(() => {
     getApiCall();
   }, []);
+
+  const [user, setuser] = useState({})
+  const handleShow = async(id) => {
+
+    const res = await axios.get("https://node5.onrender.com/user/user/"+id);
+    setuser(res.data.data);
+    setShow(true);
+  };
+  const handleClose = () => {
+    setShow(false);
+  }
 
   return (
     <div>
@@ -93,12 +108,32 @@ export const ApiDemo1 = () => {
                   >
                     DELETE
                   </button>
+                  <button onClick={()=>{
+                    handleShow(user._id)
+                  }} className="btn btn-info">Detail</button>
+                  <Link to ={`/updateuser/${user?._id}`} className="btn btn-warning">Edit</Link>
                 </td>
               </tr>
             );
           })}
         </tbody>
       </table>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>{user?.name}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>{user?.email}</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
       {/* <button onClick={()=>{getApiCall()}}>Get API Call</button> */}
     </div>
   );
