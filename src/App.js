@@ -21,11 +21,20 @@ import { ApiDemo1 } from './api/ApiDemo1';
 import { UseEffectDemo } from './components/UseEffectDemo';
 import { ApiDemo2 } from './components/ApiDemo2';
 import { UpdateUser } from './api/UpdateUser';
+import { ApiDemo3 } from './api/ApiDemo3';
+import { useEffect } from 'react';
 
 function App() {
 
  
   var title = "React App"
+
+  useEffect(() => {
+    
+    localStorage.setItem("token","87a6e693c6ad5316132fb9df78c80553c9fe17fbee4945d3704e2b55fd94c2b5")
+    
+  }, [])
+  
 
 
   return (
@@ -42,6 +51,8 @@ function App() {
         <Route path='/formdemo3' element = {<FormDemo4/>}></Route>
         <Route path='/apidemo1' element = {<ApiDemo1/>}></Route>
         <Route path='/apidemo2' element = {<ApiDemo2/>}></Route>
+        <Route path='/apidemo2' element = {<ApiDemo2/>}></Route>
+        <Route path='/apidemo3' element = {<ApiDemo3/>}></Route>
         <Route path='/useEffectdemo' element = {<UseEffectDemo/>}></Route>
         <Route path = "/updateuser/:id" element = {<UpdateUser/>}></Route>
         {/* <Route path ="/*" element = {<h1>404</h1>}></Route> */}
