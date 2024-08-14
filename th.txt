@@ -31,6 +31,7 @@ parent -> child  --> send --> most child
 
 
 2)context
+    :a -->b -== >drilling
 3)redux
 
 dom : document object model | Document
@@ -126,3 +127,6 @@ post api : ---> userObjc --> button add:
 form convert
 
 npm install react-bootstrap bootstrap
+
+
+https://www.omdbapi.com/
