@@ -26,6 +26,7 @@ import { useEffect } from 'react';
 import { Products } from './components/products/Products';
 import { AppContext } from './appContext';
 import { QueryDemo1 } from './QueryDemo/QueryDemo1';
+import { QueryDemo2 } from './QueryDemo/QueryDemo2';
 
 function App() {
 
@@ -61,6 +62,7 @@ function App() {
         <Route path = "/updateuser/:id" element = {<UpdateUser/>}></Route>
         <Route path ="/products" element = {<Products/>}></Route>
         <Route path='/querydemo1' element = {<QueryDemo1/>}></Route>
+        <Route path='/querydemo2' element = {<QueryDemo2/>}></Route>
         {/* <Route path ="/*" element = {<h1>404</h1>}></Route> */}
         <Route path='/*' element = {<Error404/>}></Route>
       </Routes>
