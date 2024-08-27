@@ -84,6 +84,11 @@ export const Navbar = () => {
               query demo2
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/prodcomp">
+              products
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

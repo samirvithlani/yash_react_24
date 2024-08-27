@@ -33,6 +33,7 @@ parent -> child  --> send --> most child
 2)context
     :a -->b -== >drilling
 3)redux
+ state management library : global state management
 
 dom : document object model | Document
 
@@ -130,3 +131,19 @@ npm install react-bootstrap bootstrap
 
 
 https://www.omdbapi.com/
+
+reqct query:
+
+npm install @tanstack/react-query"
+
+
+redux:
+
+button addtoccart -->addtocart action --. reducer --> global store -->
+
+npm install @reduxjs/toolkit
+
+
+npm install react-redux
+
+
