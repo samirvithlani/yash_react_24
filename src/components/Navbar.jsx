@@ -1,7 +1,14 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
+  // const state =  useSelector((state)=>state)
+  // console.log("state...",state)
+  const cartState = useSelector((state)=>state.cart)
+  console.log("cartState...",cartState)
+  const bankState = useSelector((state)=>state.bank)
+  console.log("bankState...",bankState)
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -19,7 +26,9 @@ export const Navbar = () => {
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
+        {
+          cartState.cart?.length
+        }
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
@@ -88,6 +97,14 @@ export const Navbar = () => {
               <Link class="nav-link" to="/prodcomp">
               products
               </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/bankcomp">
+              bank comp
+              </Link>
+            </li>
+            <li class="nav-item">
+              bank balance: {bankState.balance}
             </li>
           </ul>
         </div>
