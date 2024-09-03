@@ -9,6 +9,8 @@ export const Navbar = () => {
   console.log("cartState...",cartState)
   const bankState = useSelector((state)=>state.bank)
   console.log("bankState...",bankState)
+  const countrtValue = useSelector((state)=>state.counter)
+  console.log("countrtValue...",countrtValue)
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -104,8 +106,14 @@ export const Navbar = () => {
               </Link>
             </li>
             <li class="nav-item">
+              <Link class="nav-link" to="/countercomp">
+              countercomp
+              </Link>
+            </li>
+            <li class="nav-item">
               bank balance: {bankState.balance}
             </li>
+            
           </ul>
         </div>
       </nav>

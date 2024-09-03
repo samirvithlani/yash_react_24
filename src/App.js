@@ -29,6 +29,7 @@ import { QueryDemo1 } from './QueryDemo/QueryDemo1';
 import { QueryDemo2 } from './QueryDemo/QueryDemo2';
 import { ProductComponent } from './prod/ProductComponent';
 import { BankComponent } from './components/bank/BankComponent';
+import { CounterComponent } from './CounterComponent';
 
 function App() {
 
@@ -67,6 +68,7 @@ function App() {
         <Route path='/querydemo2' element = {<QueryDemo2/>}></Route>
         <Route path='/prodcomp' element = {<ProductComponent/>}></Route>
         <Route path='/bankcomp' element ={<BankComponent/>}></Route>
+        <Route path = "/countercomp" element = {<CounterComponent/>}></Route>
         {/* <Route path ="/*" element = {<h1>404</h1>}></Route> */}
         <Route path='/*' element = {<Error404/>}></Route>
       </Routes>
