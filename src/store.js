@@ -4,6 +4,7 @@ import bankSlice from "./redux/bankSlice";
 import storage from "redux-persist/lib/storage";
 import counterSlice from "./redux/counterSlice";
 import { persistReducer, persistStore } from "redux-persist";
+import contentSlice from "./redux/contentSlice";
 
 const persistConfig = {
   key: "root",
@@ -13,6 +14,7 @@ const rootReducer = combineReducers({
   cart: cartReducer,
   bank: bankSlice,
   counter: counterSlice,
+  content: contentSlice,
 });
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 

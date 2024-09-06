@@ -113,6 +113,11 @@ export const Navbar = () => {
             <li class="nav-item">
               bank balance: {bankState.balance}
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/contentcomp">
+              contentcomp            
+              </Link>
+            </li>
             
           </ul>
         </div>
